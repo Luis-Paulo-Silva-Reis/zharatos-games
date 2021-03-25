@@ -1,0 +1,29 @@
+h2 {
+  width: 100%;
+  color: whitesmoke;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+}
+
+.fa-facebook {
+  display: flex;
+  background: #3b5998;
+  color: whitesmoke;
+  justify-content: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.centro {
+  justify-content: center;
+  align-items: center;
+}
