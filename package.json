@@ -1,9 +1,9 @@
 {
   "name": "zharatosgames",
-  " homepage ": "https://zharatosgames.com/",
+ 
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://zharatosgames.com/db",
+
   "dependencies": {
     "axios": "^0.21.1",
     "react": "latest",
