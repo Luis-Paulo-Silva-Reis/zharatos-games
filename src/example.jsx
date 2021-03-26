@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./css.css";
 import './Componets/Pagination/pagination.css';
 
+
 import Header from "./Componets/Header/Header";
 import News from "./Componets/News/News";
 import Footer from "./Componets/Footer/Footer";
