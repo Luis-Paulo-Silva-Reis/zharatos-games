@@ -52,7 +52,7 @@ export class FirstComponents extends PureComponent {
   // https://zharatosgames.com/db
   //"https://jsonplaceholder.typicode.com/posts"
   getData() {
-    axios.get("/noticias.json").then(res => {
+    axios.get("https://db.zharatosgames.com/noticias.json").then(res => {
       var data = res.data;
 
       var slice = data.slice(
