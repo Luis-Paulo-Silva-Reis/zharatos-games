@@ -7,7 +7,7 @@ media_folder: "public/images"
 public_folder: "/images" 
 
 collections:
-  - name: "pages" # Used in routes, e.g., /admin/collections/blog
+  - name: "src/Pages" # Used in routes, e.g., /admin/collections/blog
     label: "pages" # Used in the UI
     folder: "src/Pages/Posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
