@@ -5,13 +5,22 @@ import './Componets/Pagination/pagination.css';
 
 import Header from "./Componets/Header/Header";
 import News from "./Componets/News/News";
-import Pagination from "./Componets/Pagination/Pagination";
 import Footer from "./Componets/Footer/Footer";
+
+import Pagination from "./Componets/Pagination/Pagination";
+import Pagination_lancamentos from "./Componets/Pagination/proximos_lancamentos";
+import Pagination_proximos_lancamentos from "./Componets/Pagination/Pagination_proximos_lancamentos";
+import Pagination_noticias from './Componets/Pagination/Pagination_noticias'
+import Pagination_listas from './Componets/Pagination/Pagination_listas'
+import Pagination_dicas from './Componets/Pagination/Pagination_dicas'
+import Pagination_review from './Componets/Pagination/Pagination_review'
+import Pagination_historias from './Componets/Pagination/Pagination_historias'
 
 export default function BasicExample() {
   return (
     <Router>
       <Header></Header>
+      
       <div className="main">
         <div className="alinha">
           <div className="nave">
@@ -22,7 +31,7 @@ export default function BasicExample() {
               </Link>
             </li>
             <li className="row-h">
-              <Link to="/Lancamentos" >
+              <Link to="/lancamentos" >
                 Lançamentos
               </Link>
             </li>
@@ -64,31 +73,34 @@ export default function BasicExample() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/Lancamentos">
+          <Route path="/lancamentos">
             <Lancamentos />
           </Route>
-          <Route path="/Proximos-lancamentos">
+          <Route path="/proximos-lancamentos">
             <Proximoslancamentos />
           </Route>
-          <Route path="/Noticias">
+          <Route path="/noticias">
             <Noticias />
           </Route>
-          <Route path="/Listas">
+          <Route path="/listas">
             <Listas />
           </Route>
-          <Route path="/Dicas">
+          <Route path="/dicas">
             <Dicas />
           </Route>
-          <Route path="/Review">
+          <Route path="/review">
             <Review />
           </Route>
-          <Route path="/Historias">
+          <Route path="/historias">
             <Historias />
           </Route>
         </Switch>
       </div>
     </Router>
+
+    
   );
+  
 }
 
 function Home() {
@@ -105,7 +117,7 @@ function Lancamentos() {
   return (
     <div className="alinha">
       
-      <Pagination />
+      <Pagination_lancamentos />
       <Footer />
     </div>
   );
@@ -115,7 +127,7 @@ function Proximoslancamentos() {
   return (
     <div className="alinha">
      
-      <Pagination />
+      <Pagination_proximos_lancamentos />
       <Footer />
     </div>
   );
@@ -124,7 +136,8 @@ function Proximoslancamentos() {
 function Noticias() {
   return (
     <div className="alinha">
-      <Pagination />
+      
+      <Pagination_noticias />
       <Footer />
     </div>
   );
@@ -133,7 +146,7 @@ function Noticias() {
 function Listas() {
   return (
     <div className="alinha">
-      <Pagination />
+      <Pagination_listas/>
       <Footer />
     </div>
   );
@@ -142,7 +155,7 @@ function Listas() {
 function Dicas() {
   return (
     <div className="alinha">
-      <Pagination />
+      <Pagination_dicas />
       <Footer />
     </div>
   );
@@ -151,7 +164,7 @@ function Dicas() {
 function Review() {
   return (
     <div className="alinha">
-      <Pagination />
+      <Pagination_review />
       <Footer />
     </div>
   );
@@ -160,7 +173,7 @@ function Review() {
 function Historias() {
   return (
     <div className="alinha">
-      <Pagination />
+      <Pagination_historias />
       <Footer />
     </div>
   );

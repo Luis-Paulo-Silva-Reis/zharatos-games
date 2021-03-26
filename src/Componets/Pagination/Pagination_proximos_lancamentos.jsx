@@ -52,7 +52,7 @@ export class FirstComponents extends PureComponent {
   // https://zharatosgames.com/db
   //"https://jsonplaceholder.typicode.com/posts"
   getData() {
-    axios.get("/data.json").then(res => {
+    axios.get("/proximos-lancamentos.json").then((res) => {
       var data = res.data;
 
       var slice = data.slice(
@@ -76,18 +76,21 @@ export class FirstComponents extends PureComponent {
           <div className="bgimg">
             <div className="linha">
               <img src={tdata.img} />
-          </div>
+            </div>
 
-          <div className="collum">
+            <div className="collum">
               <h2 className="title-post">{tdata.title}</h2>
               <p className="Texto-post">{tdata.body}</p>
               <div className="More-post">
-                  <a className="Tomator" href={tdata.url}> LEIA MAIS </a>
+                <a className="Tomator" href={tdata.url}>
+                  {" "}
+                  LEIA MAIS{" "}
+                </a>
               </div>
+            </div>
           </div>
-        </div>
-  // </div>
-))}
+          // </div>
+        ))}
 
         <ReactPaginate
           previousLabel={"prev"}

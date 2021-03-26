@@ -14,16 +14,19 @@ h2 {
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
+  padding: 5px;
+  font-size: 36px;
   width: 50px;
-  text-align: center;
-  justify-content: center;
+ 
+
   text-decoration: none;
-  margin: 5px 2px;
+ 
 }
 
 .centro {
+  display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  
 }
